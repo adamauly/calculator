@@ -1,0 +1,155 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    margin: 32px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Calculator {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-shrink: 0;
+    gap: 6px;
+    width: 404px;
+    height: 196px;
+}
+
+.Display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 4px;
+    font-size: 24px;
+    height: 48px;
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+    border-right: 5px solid hsl(0, 0%, 75%);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.Buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+}
+
+button:hover {
+    filter: brightness(95%);
+}
+
+button:active {
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.Calculator button {
+    flex-shrink: 0;
+    height: 32px;
+    width: 96px;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 95%);
+    transition: 0.07s;
+}
+
+.Symbol {
+    font-size: 18px;
+}
+
+.Symbol:active {
+    font-size: 140%;
+}
+
+.ClearButtons {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 200px;
+    width: 64px;
+    gap: 6px;
+    transition: 0s;
+}   
+
+.AC {
+    height: 32px;
+}
+
+.CE {
+    flex: 1;
+}
+
+.AC:hover,
+.CE:hover {
+    filter: brightness(95%);
+}
+
+.AC:active,
+.CE:active {
+    font-size: 100%;
+}
+
+.eyes {
+    font-size: 80px;
+    height: 48px;
+    color: hsl(0, 0%, 75%);
+    background-color: transparent;
+    writing-mode: vertical-rl;
+    text-align: center;
+    align-self: center;
+    position: relative;
+}
+
+.eyeball1,
+.eyeball2 {
+    background-color: transparent;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.eyeball1 {
+    height: 24px;
+    width: 22px;
+    margin-top: 12px;
+    margin-left: 9px;
+}
+
+.eyeball2 {
+    height: 20px;
+    width: 19px;
+    margin-top: 14px;
+    margin-left: 36px;
+}
+
+.pupil {
+    background-color: hsl(0, 0%, 75%);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: 16px, 16px;
+    transform: rotate(0deg);
+}
+
+.pupil2 {
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.pupil1 {
+    margin-top: 10px;
+    margin-left: 8px;
+}
